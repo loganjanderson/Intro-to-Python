@@ -1,5 +1,14 @@
-sentence = 'The quick brown fox jumped over the lazy dog'
+# sentence = 'The quick brown fox jumped'
+# sentence_two = sentence.upper()
 
-sentence_two = 'That is my dog\'s bowl'
+# print(sentence)
+# print(sentence_two)
 
-sentence_three = "That is my dog's bowl"
+# sentence = 'the quick brown fox jumped'.capitalize()
+# print(sentence)
+
+# sentence = 'the quick brown fox jumped'.title()
+# print(sentence)
+
+sentence = 'THE QUICK BROWN FOX jumped'.lower()
+print(sentence)
