@@ -1,17 +1,14 @@
-import operator
-from functools import reduce
+name = 'Logan'
+product = 'Python elearning course'
 
-def dynamic_reducer(collection, op):
-    operators = {
-        "+": operator.add,
-        "-": operator.sub,
-        "*": operator.mul,
-        "/": operator.truediv
-    }
+email_content = f""" 
 
-    return reduce((lambda total, element: operators[op](total, element)), collection)
+Hi {name}
 
-print(dynamic_reducer([1, 245, 3], '+'))
-print(dynamic_reducer([1, 276, 3], '-'))
-print(dynamic_reducer([1, 12, 3], '*'))
-print(dynamic_reducer([1000, 2, 3], '/')) 
+Thanks for purchasing {product}
+
+Thanks,
+Sales Team 
+"""
+
+print(email_content)
