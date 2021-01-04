@@ -1,11 +1,17 @@
+import operator
+from functools import reduce
 
+def dynamic_reducer(collection, op):
+    operators = {
+        "+": operator.add,
+        "-": operator.sub,
+        "*": operator.mul,
+        "/": operator.truediv
+    }
 
-content = """
-Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.
+    return reduce((lambda total, element: operators[op](total, element)), collection)
 
-Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras justo odio, dapibus ac facilisis in.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-""".strip()
-
-print(content)
+print(dynamic_reducer([1, 245, 3], '+'))
+print(dynamic_reducer([1, 276, 3], '-'))
+print(dynamic_reducer([1, 12, 3], '*'))
+print(dynamic_reducer([1000, 2, 3], '/')) 
