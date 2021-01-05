@@ -1,5 +1,9 @@
-sentence = 'The quick brown fox jumped over the lazy dog'
+url = 'https://google.com'
 
-sentence = sentence.replace('quick','slow')
+# print(url.strip('https://'))
 
-print(sentence)
+url = url.lstrip('https://')
+url = url.rstrip('.com')
+url = url.capitalize()
+
+print(url)
