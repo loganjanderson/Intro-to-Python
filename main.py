@@ -1,7 +1,5 @@
-name = 'Logan'
-age = '25'
-product = 'Python eLearning Course'
+sentence = 'The quick brown fox jumped over the lazy dog'
 
-greeting = "Hi {0}, you are listed as {1} years old and you have purchased: {2}...".format(name, age, product)
+sentence = sentence.replace('quick','slow')
 
-print(greeting)
+print(sentence)
