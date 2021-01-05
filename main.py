@@ -1,14 +1,7 @@
 name = 'Logan'
-product = 'Python elearning course'
+age = '25'
+product = 'Python eLearning Course'
 
-email_content = f""" 
+greeting = "Hi {0}, you are listed as {1} years old and you have purchased: {2}...".format(name, age, product)
 
-Hi {name}
-
-Thanks for purchasing {product}
-
-Thanks,
-Sales Team 
-"""
-
-print(email_content)
+print(greeting)
