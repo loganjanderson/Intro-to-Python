@@ -1,15 +1,13 @@
-from decimal import Decimal 
+import math
 
-# product_cost = 88.40
-# commission_rate = 0.08
-# qty = 450
+loss = -20.25
+product_cost = 89.99
 
-# product_cost += (commission_rate * product_cost)
-# print(product_cost * qty) #42962.4
+print(abs(loss))
+print(math.floor(product_cost))
+print(math.ceil(product_cost))
+print(abs(math.floor(loss)))
+print(round(product_cost))
+print(math.sqrt(product_cost))
+print(math.pow(5, 2))
 
-product_cost = Decimal(88.40)
-commission_rate = Decimal(0.08)
-qty = 450
-
-product_cost += (commission_rate * product_cost)
-print(product_cost * qty)
