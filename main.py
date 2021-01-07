@@ -1,18 +1,9 @@
-users = ['a', 'b', 'c', 'd']
+tags = ['python', 'development', 'tutorials', 'code']
 
+number_of_tags = len(tags)
+last_item = tags[-1]
+index_of_last_item = tags.index(last_item)
 
-print(users)
-
-users.remove('b')
-
-print(users)
-
-popped_user = users.pop()
-
-print(popped_user)
-print(users)
-
-del users[0]
-
-print(users)
-
+print(number_of_tags)
+print(last_item)
+print(index_of_last_item)
