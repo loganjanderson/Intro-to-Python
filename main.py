@@ -1,9 +1,12 @@
-tags = ['python', 'development', 'tutorials', 'code']
 
-number_of_tags = len(tags)
-last_item = tags[-1]
-index_of_last_item = tags.index(last_item)
+# https://www.google.com/search?q=pyhton+tutorial
 
-print(number_of_tags)
-print(last_item)
-print(index_of_last_item)
+uri = 'https://www.google.com/search?q='
+tags = ['python', 'development', 'tutorial']
+formatted_tags = '+'.join(tags)
+query_uri = f'{uri}{formatted_tags}'
+
+print(query_uri)
+
+
+
