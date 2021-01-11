@@ -1,12 +1,25 @@
+import math
 
-# https://www.google.com/search?q=pyhton+tutorial
+sale_prices = [
+  100,
+  83,
+  220,
+  40,
+  100,
+  400,
+  10,
+  1,
+  3
+]
 
-uri = 'https://www.google.com/search?q='
-tags = ['python', 'development', 'tutorial']
-formatted_tags = '+'.join(tags)
-query_uri = f'{uri}{formatted_tags}'
+sorted_list = sorted(sale_prices)
+num_of_sales = len(sorted_list)
+first_sales_items = sorted_list[:math.floor(num_of_sales/2)]
+last_sales_items = sorted_list[-(math.floor(num_of_sales/2)):]
+median = sorted_list[math.floor(num_of_sales/2):(math.floor(num_of_sales/2)+1)]
 
-print(query_uri)
-
-
-
+print(sorted_list)
+print(num_of_sales) 
+print(first_sales_items)
+print(last_sales_items)
+print(median)
