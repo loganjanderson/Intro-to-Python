@@ -1,14 +1,9 @@
-
-players = {
-    "ss": "Correa",
-    "2b": "Altuve",
-    "3b": "Bregman",
-    "DH": "Gattis",
-    "OF": "Springer",
+teams = {
+    "astros": ["Altuve,", "Correa", "Bregman"],
+    "angels": ["Trout", "Pujols"],
+    "yankees": ["Judge", "Stanton"]
 }
 
-second_base = players['OF']
+teams['red sox'] = ['Price', 'Betts']
 
-print(players)
-
-print(second_base)
+print(teams)
