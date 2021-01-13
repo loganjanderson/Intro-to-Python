@@ -1,9 +1,12 @@
-teams = {
-    "astros": ["Altuve,", "Correa", "Bregman"],
-    "angels": ["Trout", "Pujols"],
-    "yankees": ["Judge", "Stanton"]
+
+company_revenue = {
+    'g': 23,
+    'f': 27,
+    't': 9,
+    'o': 11
 }
 
-teams['red sox'] = ['Price', 'Betts']
-
-print(teams)
+print('google' + company_revenue['g'] * '$')
+print('facebook' + company_revenue['f'] * '$')
+print('twitter' + company_revenue['t'] * '$')
+print('offline' + company_revenue['o'] * '$')
