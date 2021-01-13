@@ -1,12 +1,9 @@
+post = ('Pyhton Basics', 'Intro guide to Python', 'Some cool content')
 
-company_revenue = {
-    'g': 23,
-    'f': 27,
-    't': 9,
-    'o': 11
-}
+# post += (['tag 1', 'tag 2', 'tag 3'],)
 
-print('google' + company_revenue['g'] * '$')
-print('facebook' + company_revenue['f'] * '$')
-print('twitter' + company_revenue['t'] * '$')
-print('offline' + company_revenue['o'] * '$')
+tags = ['tag 1', 'tag 2', 'tag 3']
+
+post += (tags,)
+
+print(post[-1][1])
