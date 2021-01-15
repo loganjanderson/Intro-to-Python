@@ -1,11 +1,12 @@
-def fizzbuzz():
-    for num in range(1, 101):
-        print(num)
-        if num % 3 == 0:
-            print('fizz')
-        if num % 5 ==0:
-            print('buzz')
-        if num % 3 == 0 and num % 5 == 0:
-            print(fizzbuzz)
+def fizz_buzz(max_num):
+    for num in range(1, max_num + 1):
+        if num % 3 == 0 and num % 5 ==0:
+            print('FizzBuzz')
+        elif num % 3 == 0:
+            print('Fizz')
+        elif num % 5 == 0:
+            print('Buzz')
+        else:
+            print(num)
 
-fizzbuzz()
+fizz_buzz(100)
