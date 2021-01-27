@@ -1,12 +1,17 @@
-def fizz_buzz(max_num):
-    for num in range(1, max_num + 1):
-        if num % 3 == 0 and num % 5 ==0:
-            print('FizzBuzz')
-        elif num % 3 == 0:
-            print('Fizz')
-        elif num % 5 == 0:
-            print('Buzz')
-        else:
-            print(num)
+from functools import reduce
 
-fizz_buzz(100)
+num_list = [1, 2, 3, 4, 5, 6]
+
+def addition(a, b):
+    result = a + b
+    return result
+    
+total = reduce(addition, num_list)
+
+num_of_nums = len(num_list)
+
+def division(x, y):
+    answer = x / y
+    print(answer)
+
+division(total, num_of_nums)
